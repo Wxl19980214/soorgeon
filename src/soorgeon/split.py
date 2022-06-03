@@ -1,7 +1,6 @@
 """
 Functions for splitting a notebook file into smaller parts
 """
-from cmath import pi
 import string
 import re
 
@@ -31,13 +30,16 @@ def find_breaks(nb):
         raise exceptions.InputError('Expected notebook to have at least '
                                     'one markdown H2 heading. '
                                     f'Check out our guide: {url}')
-    
+
     if len(breaks) == 1:
-        click.secho('Warning: refactoring successful but only one H2 heading detected, '
+        click.secho('Warning: refactoring successful '
+                    'but only one H2 heading detected, '
                     'output pipeline has a single task. '
-                    "It's recommended to break down the analysis into multiple small notebooks. "
+                    "It's recommended to break down "
+                    'the analysis into multiple small notebooks. '
                     'Consider adding more H2 headings. \n'
-                    'Learn more: https://github.com/ploomber/soorgeon/blob/main/doc/guide.md\n',
+                    'Learn more: https://github.com/'
+                    'ploomber/soorgeon/blob/main/doc/guide.md\n',
                     fg='yellow')
     return breaks
 
