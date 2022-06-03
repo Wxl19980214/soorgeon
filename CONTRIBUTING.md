@@ -1,5 +1,6 @@
 # Contributing to Soorgeon
 
+s
 Hi! Thanks for considering a contribution to Soorgeon. We're building Soorgeon to help data scientists convert their monolithic notebooks into maintainable pipelines. Our command-line interface takes a notebook as an input and generates a [Ploomber pipeline](https://github.com/ploomber/ploomber) as output ([see demo here](https://www.youtube.com/watch?v=EJecqsZBr3Q)), and we need your help to ensure our tool is robust to real-world code (which is messy!).
 
 We're downloading publicly available notebooks from Kaggle and testing if our tools can successfully refactor them.
